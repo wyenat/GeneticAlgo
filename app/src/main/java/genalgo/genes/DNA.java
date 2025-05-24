@@ -1,8 +1,6 @@
 package genalgo.genes;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class DNA {
     private final HashMap<Integer, Gene> genes;
@@ -17,9 +15,5 @@ public class DNA {
 
     public Gene getGene(int id) {
         return genes.get(id);
-    }
-
-    public List<Gene> getGenes() {
-        return new ArrayList<>(genes.values());
     }
 }

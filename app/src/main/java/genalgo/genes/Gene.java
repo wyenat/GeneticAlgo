@@ -1,7 +1,7 @@
 package genalgo.genes;
 
 public class Gene {
-    private int id;
+    private final int id;
 
     public Gene() {
         // Generate a random ID for the gene.
