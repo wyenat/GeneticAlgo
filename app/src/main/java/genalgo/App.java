@@ -3,9 +3,14 @@
  */
 package genalgo;
 
+import genalgo.lifecycle.World;
+
 public class App {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        World world = new NaiveWorld(10);
+        System.out.println(world);
+        world.tick();
+        System.out.println(world);
     }
 }
