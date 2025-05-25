@@ -1,14 +1,18 @@
 package genalgo.genes;
 
-public class Gene {
+public abstract class Gene {
     private final int id;
 
-    public Gene() {
-        // Generate a random ID for the gene.
-        this.id = (int) (Math.random() * 10000); // Example: Random ID between 0 and 9999
+    public Gene(int id) {
+        this.id = id;
     }
 
     public int getId() {
         return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Gene_id=" + id;
     }
 }

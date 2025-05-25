@@ -16,4 +16,15 @@ public class DNA {
     public Gene getGene(int id) {
         return genes.get(id);
     }
+
+    public HashMap<Integer, Gene> getGenes(){
+        return genes;
+    }
+
+    @Override
+    public String toString() {
+        return "DNA{" +
+                "genes=" + genes +
+                '}';
+    }
 }
